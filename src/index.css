@@ -381,6 +381,26 @@ a {
   color: white;
   font-weight: 800;
 }
+.project-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 800;
+  transition: all 0.25s ease;
+}
+
+.project-link:hover {
+  color: var(--accent);
+  transform: translateX(4px);
+}
 
 .project-mockup {
   position: relative;

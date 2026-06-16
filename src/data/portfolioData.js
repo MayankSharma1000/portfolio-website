@@ -69,19 +69,20 @@ export const projects = [
     type: "Frontend Project",
     image: portfolioWebsite,
     featured: false,
-    status: "Completed",
+    status: "Live",
     year: "2026",
     description:
-      "A premium Apple-inspired developer portfolio built with React, Vite, and Framer Motion. Redesigned from a basic portfolio into a modern interactive experience with smooth scrolling, animated project showcases, technology marquee, certification gallery, floating contact dock, project image previews, custom loader, scroll progress indicator, responsive layouts, and polished UI/UX interactions.",
+      "A premium Apple-inspired developer portfolio built with React, Vite, and Framer Motion. Redesigned from a basic portfolio into a modern interactive experience with smooth scrolling, animated project showcases, technology displays, certification galleries, floating contact dock, project image previews, custom loader, responsive layouts, and polished UI/UX interactions.",
     tech: [
       "React.js",
       "Vite",
       "Framer Motion",
       "CSS",
       "Responsive Design",
-      "UI/UX Design",
+      "UI/UX Design"
     ],
     github: "https://github.com/MayankSharma1000/portfolio-website",
+    live: "https://portfolio-website-2jyd.vercel.app"
   },
 ];
 
