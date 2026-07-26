@@ -9,6 +9,7 @@ import Hero from "./components/Hero.jsx";
 import TechMarquee from "./components/TechMarquee.jsx";
 import Stats from "./components/Stats.jsx";
 import Highlights from "./components/Highlights.jsx";
+import SmartMoneyShowcase from "./components/SmartMoneyShowcase.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
 import Certifications from "./components/Certifications.jsx";
@@ -32,12 +33,14 @@ function App() {
       <Hero />
       <TechMarquee />
       <Stats />
+      <SmartMoneyShowcase />
       <Highlights />
       <Projects />
       <Skills />
       <Certifications />
       <Journey />
       <About />
+      <OpenToWork />
       <Contact />
       <Footer />
     </main>

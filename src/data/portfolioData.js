@@ -1,35 +1,137 @@
-import expenseTracker from "../assets/projects/expense-tracker.png";
+import smartMoneyDashboard from "../assets/projects/smartmoney/dashboard.png";
+import smartMoneyExpenses from "../assets/projects/smartmoney/expenses.png";
+import smartMoneyAnalytics from "../assets/projects/smartmoney/analytics.png";
+import smartMoneySavings from "../assets/projects/smartmoney/savings.png";
+import smartMoneyInvestments from "../assets/projects/smartmoney/investments.png";
+import smartMoneyRecurring from "../assets/projects/smartmoney/recurring-expenses.png";
+
 import supportDeflector from "../assets/projects/customer-support-deflector.png";
 import hireJourney from "../assets/projects/hirejourney.png";
 import portfolioWebsite from "../assets/projects/portfolio-website.png";
 
+export const smartMoney = {
+  title: "SmartMoney",
+  subtitle: "Full-Stack Personal Finance Platform",
+  type: "Flagship Project",
+  status: "Completed",
+  year: "2026",
+
+  description:
+    "A full-stack personal finance platform designed to bring expenses, budgets, savings, investments, recurring payments, analytics, and financial reporting into one secure dashboard.",
+
+  overview:
+    "SmartMoney evolved from an expense tracker into a modular finance application with authenticated user flows, reusable frontend architecture, REST APIs, financial analytics, security middleware, and exportable reports.",
+
+  github: "https://github.com/MayankSharma1000/SmartMoney",
+
+  tech: [
+    "React.js",
+    "Vite",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "REST APIs",
+  ],
+
+  capabilities: [
+    {
+      label: "Finance",
+      value: "Expenses · Budgets · Savings · Investments",
+    },
+    {
+      label: "Security",
+      value: "JWT · Protected Routes · Helmet · Rate Limiting",
+    },
+    {
+      label: "Architecture",
+      value: "Reusable Hooks · Modular Components · REST APIs",
+    },
+    {
+      label: "Reporting",
+      value: "Analytics · Financial Insights · PDF · Excel",
+    },
+  ],
+
+  engineering: [
+    {
+      number: "01",
+      title: "Authenticated Application",
+      text: "JWT-based authentication, protected application routes, password security, and controlled access to user financial data.",
+    },
+    {
+      number: "02",
+      title: "Financial Management",
+      text: "Expense tracking, monthly budgets, savings goals, investment monitoring, and recurring expense workflows.",
+    },
+    {
+      number: "03",
+      title: "Analytics & Insights",
+      text: "Dashboard statistics, financial visualizations, derived calculations, and insight generation from user finance data.",
+    },
+    {
+      number: "04",
+      title: "Production-Minded Security",
+      text: "Helmet security headers, rate limiting, MongoDB sanitization, CORS configuration, and defensive backend middleware.",
+    },
+    {
+      number: "05",
+      title: "Reusable React Architecture",
+      text: "Feature-oriented components, reusable hooks, shared utilities, protected routing, and maintainable frontend data flows.",
+    },
+    {
+      number: "06",
+      title: "Financial Reporting",
+      text: "PDF and Excel report exports designed to turn tracked financial data into portable, useful reports.",
+    },
+  ],
+
+  gallery: [
+    {
+      label: "Dashboard",
+      image: smartMoneyDashboard,
+      description:
+        "Unified financial overview with high-level metrics, budgets, spending, savings, investments, and insights.",
+    },
+    {
+      label: "Expenses",
+      image: smartMoneyExpenses,
+      description:
+        "Expense management interface for tracking and organizing transactions.",
+    },
+    {
+      label: "Analytics",
+      image: smartMoneyAnalytics,
+      description:
+        "Visual analytics for understanding financial activity and spending patterns.",
+    },
+    {
+      label: "Savings",
+      image: smartMoneySavings,
+      description:
+        "Goal-based savings tracking with progress visibility.",
+    },
+    {
+      label: "Investments",
+      image: smartMoneyInvestments,
+      description:
+        "Investment monitoring integrated into the wider personal finance experience.",
+    },
+    {
+      label: "Recurring",
+      image: smartMoneyRecurring,
+      description:
+        "Recurring expense management for predictable financial commitments.",
+    },
+  ],
+};
+
 export const projects = [
-  {
-    title: "Smart Expense Tracker",
-    subtitle: "Full-Stack Finance Dashboard",
-    type: "Featured Project",
-    image: expenseTracker,
-    featured: true,
-    status: "Completed",
-    year: "2026",
-    description:
-      "A full-stack personal finance platform featuring expense tracking, budget management, savings goals, investment monitoring, analytics dashboards, JWT authentication, and intelligent financial insights.",
-    tech: [
-      "React.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT Authentication",
-      "Framer Motion",
-    ],
-    github: "https://github.com/MayankSharma1000/Smart-expense-tracker",
-  },
   {
     title: "Customer Support Deflector",
     subtitle: "AI-Powered Email Assistant",
     type: "AI Project",
     image: supportDeflector,
-    featured: true,
     status: "Completed",
     year: "2026",
     description:
@@ -49,11 +151,10 @@ export const projects = [
     subtitle: "Job Application CRM",
     type: "Career Management Platform",
     image: hireJourney,
-    featured: false,
     status: "Completed",
     year: "2026",
     description:
-      "A modern job application management platform that helps candidates track applications, interview stages, follow-ups, deadlines, recruiter interactions, and overall hiring progress through a centralized dashboard.",
+      "A job application management platform for tracking applications, interview stages, follow-ups, deadlines, recruiter interactions, and hiring progress from a centralized dashboard.",
     tech: [
       "JavaScript",
       "Node.js",
@@ -65,48 +166,146 @@ export const projects = [
   },
   {
     title: "Portfolio Website",
-    subtitle: "Premium Developer Portfolio",
+    subtitle: "Interactive Developer Portfolio",
     type: "Frontend Project",
     image: portfolioWebsite,
-    featured: false,
     status: "Live",
     year: "2026",
     description:
-      "A premium Apple-inspired developer portfolio built with React, Vite, and Framer Motion. Redesigned from a basic portfolio into a modern interactive experience with smooth scrolling, animated project showcases, technology displays, certification galleries, floating contact dock, project image previews, custom loader, responsive layouts, and polished UI/UX interactions.",
+      "A React portfolio focused on product presentation, responsive layouts, motion, smooth navigation, and polished interaction design.",
     tech: [
       "React.js",
       "Vite",
       "Framer Motion",
       "CSS",
       "Responsive Design",
-      "UI/UX Design"
     ],
     github: "https://github.com/MayankSharma1000/portfolio-website",
-    live: "https://portfolio-website-2jyd.vercel.app"
+    live: "https://portfolio-website-2jyd.vercel.app",
   },
 ];
 
-export const skills = [
-  "JavaScript",
-  "React.js",
-  "Node.js",
-  "Express.js",
-  "MongoDB",
-  "REST APIs",
-  "JWT Authentication",
-  "Protected Routes",
-  "bcrypt.js",
-  "Git & GitHub",
-  "Postman",
-  "VS Code",
-  "NPM",
-  "C++",
-  "Python",
-  "AI Integration",
-  "OpenRouter API",
-  "Prompt Engineering",
-  "Framer Motion",
-  "Responsive Design",
+export const skillGroups = [
+  {
+    title: "Frontend Engineering",
+    skills: [
+      "React.js",
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "Vite",
+      "Framer Motion",
+      "Responsive Design",
+      "Component Architecture",
+      "Reusable Components",
+      "React Hooks",
+      "State Management",
+      "UI/UX Implementation",
+    ],
+  },
+  {
+    title: "Backend & APIs",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "CRUD Operations",
+      "Middleware",
+      "Routing",
+      "Server-Side Logic",
+      "API Integration",
+      "Async JavaScript",
+      "Promises",
+      "Event Loop",
+    ],
+  },
+  {
+    title: "Database & Data",
+    skills: [
+      "MongoDB",
+      "Data Modeling",
+      "Database Integration",
+      "Application Data Flows",
+      "Financial Analytics",
+      "Derived Calculations",
+      "PDF Reporting",
+      "Excel Reporting",
+    ],
+  },
+  {
+    title: "Authentication & Security",
+    skills: [
+      "JWT Authentication",
+      "Protected Routes",
+      "bcrypt.js",
+      "Password Hashing",
+      "Helmet",
+      "Rate Limiting",
+      "Mongo Sanitization",
+      "CORS",
+      "Security Middleware",
+      "Access Control",
+    ],
+  },
+  {
+    title: "Architecture & Engineering",
+    skills: [
+      "Full-Stack Architecture",
+      "REST Architecture",
+      "Modular Components",
+      "Reusable Hooks",
+      "Shared Utilities",
+      "Separation of Concerns",
+      "Feature-Oriented Design",
+      "Debugging",
+      "API Testing",
+      "Integration Troubleshooting",
+    ],
+  },
+  {
+    title: "AI & Machine Learning",
+    skills: [
+      "LLM Integration",
+      "OpenRouter API",
+      "Prompt Engineering",
+      "AI Workflows",
+      "Sentiment Analysis",
+      "Text Categorization",
+      "AI Draft Generation",
+      "NLP",
+      "Python",
+    ],
+  },
+  {
+    title: "Developer Tools & Delivery",
+    skills: [
+      "Git",
+      "GitHub",
+      "Postman",
+      "NPM",
+      "VS Code",
+      "Chrome DevTools",
+      "Vercel",
+      "Docker",
+      "Build Debugging",
+      "Production Builds",
+      "Deployment Workflows",
+    ],
+  },
+  {
+    title: "Programming & Foundations",
+    skills: [
+      "JavaScript",
+      "Python",
+      "C++",
+      "OOP",
+      "DSA",
+      "Asynchronous Programming",
+      "Problem Solving",
+      "Software Debugging",
+      "Responsive Web Development",
+    ],
+  },
 ];
 
 export const certifications = [

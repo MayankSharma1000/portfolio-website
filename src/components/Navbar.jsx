@@ -5,7 +5,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Work", href: "#work" },
+    { name: "Work", href: "#smartmoney" },
     { name: "Strengths", href: "#highlights" },
     { name: "Skills", href: "#skills" },
     { name: "Certificates", href: "#certifications" },

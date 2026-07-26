@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-// import { FiGithub } from "react-icons/fi";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 function Hero() {
@@ -12,11 +11,11 @@ function Hero() {
         className="hero-content"
       >
         <p className="eyebrow">
-          Full-Stack Developer • AI-Powered Applications
+          Software Engineering • Full-Stack • AI
         </p>
 
         <div className="availability">
-          Available for Software Developer Roles
+          Open to Software Engineering Opportunities
         </div>
 
         <h1>
@@ -24,16 +23,15 @@ function Hero() {
         </h1>
 
         <p className="hero-subtitle">
-          Full-Stack Developer specializing in React, Node.js,
-          MongoDB and AI-powered applications.
-
-          Building secure, scalable and user-centric software
-          solutions that solve real-world problems.
+          Software developer working across frontend, backend, full-stack,
+          APIs, databases, AI integrations, security, and product engineering.
+          I build complete applications and adapt across the stack wherever
+          strong engineering, problem solving, and fast learning are needed.
         </p>
 
         <div className="hero-actions">
-          <a href="#work" className="btn primary">
-            View Work
+          <a href="#smartmoney" className="btn primary">
+            View Flagship Project
           </a>
 
           <a
@@ -63,7 +61,6 @@ function Hero() {
             LinkedIn <FiLinkedin />
           </a>
         </div>
-
       </motion.div>
 
       <motion.div
@@ -80,18 +77,18 @@ function Hero() {
           </div>
 
           <div className="device-screen">
-            <p>Featured Dashboard</p>
-            <h3>Smart Expense Tracker</h3>
+            <p>Flagship Product</p>
+            <h3>SmartMoney</h3>
 
             <div className="mini-stats">
               <div>
-                <strong>₹85K</strong>
-                <span>Tracked</span>
+                <strong>Full</strong>
+                <span>Stack</span>
               </div>
 
               <div>
-                <strong>4</strong>
-                <span>Projects</span>
+                <strong>API</strong>
+                <span>Driven</span>
               </div>
 
               <div>
