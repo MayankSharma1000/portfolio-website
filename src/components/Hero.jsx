@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiArrowDown, FiGithub, FiLinkedin } from "react-icons/fi";
 
 function Hero() {
   return (
@@ -10,28 +10,32 @@ function Hero() {
         transition={{ duration: 0.9 }}
         className="hero-content"
       >
-        <p className="eyebrow">
-          Software Engineering • Full-Stack • AI
-        </p>
+        <p className="eyebrow">Full-Stack Developer · Backend · AI</p>
 
         <div className="availability">
-          Open to Software Engineering Opportunities
+          <span />
+          Open to work · Software Engineering
         </div>
 
         <h1>
-          Mayank <br /> Sharma.
+          Mayank <br /> Sharma<span>.</span>
         </h1>
 
         <p className="hero-subtitle">
-          Software developer working across frontend, backend, full-stack,
-          APIs, databases, AI integrations, security, and product engineering.
-          I build complete applications and adapt across the stack wherever
-          strong engineering, problem solving, and fast learning are needed.
+          Computer Science Engineer building full-stack applications and
+          backend systems with React, Node.js, Express.js, MongoDB, Docker,
+          and LLM APIs.
+        </p>
+
+        <p className="hero-detail">
+          I enjoy taking a problem from interface to API, database, and
+          application logic, then debugging the pieces until they work
+          together as one system.
         </p>
 
         <div className="hero-actions">
-          <a href="#smartmoney" className="btn primary">
-            View Flagship Project
+          <a href="#file-processing" className="btn primary">
+            Explore My Work <FiArrowDown />
           </a>
 
           <a
@@ -40,25 +44,27 @@ function Hero() {
             rel="noreferrer"
             className="btn secondary"
           >
-            Resume
+            View Resume
           </a>
 
           <a
             href="https://github.com/MayankSharma1000"
             target="_blank"
             rel="noreferrer"
-            className="btn secondary"
+            className="icon-btn"
+            aria-label="GitHub"
           >
-            GitHub <FiGithub />
+            <FiGithub />
           </a>
 
           <a
             href="https://www.linkedin.com/in/mayank-sharma-563428200/"
             target="_blank"
             rel="noreferrer"
-            className="btn secondary"
+            className="icon-btn"
+            aria-label="LinkedIn"
           >
-            LinkedIn <FiLinkedin />
+            <FiLinkedin />
           </a>
         </div>
       </motion.div>
@@ -77,31 +83,35 @@ function Hero() {
           </div>
 
           <div className="device-screen">
-            <p>Flagship Product</p>
-            <h3>SmartMoney</h3>
+            <div className="hero-window-label">
+              <span>BUILD / DEBUG / SHIP</span>
+              <i />
+            </div>
+
+            <p>Current focus</p>
+            <h3>Backend Systems</h3>
 
             <div className="mini-stats">
               <div>
-                <strong>Full</strong>
-                <span>Stack</span>
+                <strong>API</strong>
+                <span>Node + Express</span>
               </div>
 
               <div>
-                <strong>API</strong>
-                <span>Driven</span>
+                <strong>DATA</strong>
+                <span>MongoDB</span>
               </div>
 
               <div>
                 <strong>AI</strong>
-                <span>Ready</span>
+                <span>LLM APIs</span>
               </div>
             </div>
 
-            <div className="chart-lines">
-              <span />
-              <span />
-              <span />
-              <span />
+            <div className="terminal-card">
+              <span>$</span>
+              <p>processing jobs...</p>
+              <strong>batch → files → jobs → results</strong>
             </div>
           </div>
         </div>

@@ -5,12 +5,10 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Work", href: "#smartmoney" },
-    { name: "Strengths", href: "#highlights" },
+    { name: "Work", href: "#file-processing" },
     { name: "Skills", href: "#skills" },
-    { name: "Certificates", href: "#certifications" },
-    { name: "Journey", href: "#journey" },
     { name: "About", href: "#about" },
+    { name: "Open To Work", href: "#open-to-work" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -29,13 +27,14 @@ function Navbar() {
       </nav>
 
       <a href="#contact" className="nav-cta">
-        Let’s Talk
+        Let's Talk
       </a>
 
       <button
         className="menu-toggle"
         onClick={() => setOpen(!open)}
         aria-label="Toggle menu"
+        aria-expanded={open}
       >
         {open ? <FiX /> : <FiMenu />}
       </button>

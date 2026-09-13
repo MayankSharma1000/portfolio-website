@@ -1,43 +1,43 @@
-import { FiBriefcase, FiMapPin, FiClock } from "react-icons/fi";
+import { FiBriefcase, FiMapPin, FiZap } from "react-icons/fi";
 
 function OpenToWork() {
   return (
     <section className="section open-work" id="open-to-work">
       <div className="open-work-card">
-        <div>
+        <div className="open-work-heading">
           <p className="eyebrow">Open To Work</p>
-          <h2>Flexible across software engineering.</h2>
+          <h2>Looking for the right engineering team.</h2>
+          <p>
+            Available for immediate opportunities where I can contribute to
+            real software, learn quickly, and grow into stronger engineering
+            responsibility.
+          </p>
         </div>
 
         <div className="open-work-grid">
           <div>
             <FiBriefcase />
-            <h3>Roles</h3>
+            <h3>Target Roles</h3>
             <p>
-              Software Developer, Software Engineer, Frontend Developer,
-              Backend Developer, Full-Stack Developer, Web Developer,
-              AI Application Developer, and related engineering roles.
+              Full-Stack Developer, Backend Developer, Software Developer,
+              Frontend Developer.
             </p>
           </div>
 
           <div>
             <FiMapPin />
-            <h3>Work Environment</h3>
+            <h3>Location</h3>
             <p>
-              Open to remote, hybrid, and on-site opportunities. Comfortable
-              working across product layers instead of being restricted to
-              one technology or part of the stack.
+              Open to remote, hybrid, and on-site opportunities.
             </p>
           </div>
 
           <div>
-            <FiClock />
-            <h3>How I Contribute</h3>
+            <FiZap />
+            <h3>What I Bring</h3>
             <p>
-              Give me a product, feature, API, interface, integration,
-              debugging problem, or unfamiliar engineering challenge and
-              I'll work through the system, learn what is required, and
-              contribute where the team needs me.
+              React + Node development, REST APIs, MongoDB, authentication,
+              debugging, Docker, and practical LLM integration.
             </p>
           </div>
         </div>

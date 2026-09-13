@@ -1,31 +1,27 @@
-// src/components/Projects.jsx
-
 import { motion } from "framer-motion";
 import { FiArrowUpRight, FiGithub } from "react-icons/fi";
 import { projects } from "../data/portfolioData";
 
 function Projects() {
   return (
-    <section className="section" id="work">
+    <section className="section" id="other-work">
       <div className="section-head">
-        <p className="eyebrow">Featured Work</p>
-        <h2>Projects built with purpose.</h2>
+        <p className="eyebrow">More Work</p>
+        <h2>Another system I built.</h2>
       </div>
 
       <div className="project-stack">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <motion.article
             key={project.title}
-            initial={{ opacity: 0, y: 70 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-120px" }}
-            transition={{ duration: 0.7, delay: index * 0.08 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7 }}
             className="project-panel"
           >
             <div className="project-content">
-              <p className="project-type">
-                {String(index + 1).padStart(2, "0")} / {project.type}
-              </p>
+              <p className="project-type">02 / {project.type}</p>
 
               <div className="project-meta">
                 <span>{project.year}</span>
@@ -51,17 +47,6 @@ function Projects() {
                 >
                   <FiGithub /> GitHub Repository <FiArrowUpRight />
                 </a>
-
-                {project.live && (
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="project-link"
-                  >
-                    Live Website <FiArrowUpRight />
-                  </a>
-                )}
               </div>
             </div>
 
@@ -73,15 +58,7 @@ function Projects() {
               </div>
 
               <div className="preview-body">
-                {project.image ? (
-                  <img src={project.image} alt={`${project.title} preview`} />
-                ) : (
-                  <div className="preview-placeholder">
-                    <p>{project.title}</p>
-                    <h5>{project.subtitle}</h5>
-                    <span>Screenshot space reserved</span>
-                  </div>
-                )}
+                <img src={project.image} alt={`${project.title} preview`} />
               </div>
             </div>
           </motion.article>

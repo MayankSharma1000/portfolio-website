@@ -4,10 +4,74 @@ import smartMoneyAnalytics from "../assets/projects/smartmoney/analytics.png";
 import smartMoneySavings from "../assets/projects/smartmoney/savings.png";
 import smartMoneyInvestments from "../assets/projects/smartmoney/investments.png";
 import smartMoneyRecurring from "../assets/projects/smartmoney/recurring-expenses.png";
-
 import supportDeflector from "../assets/projects/customer-support-deflector.png";
-import hireJourney from "../assets/projects/hirejourney.png";
-import portfolioWebsite from "../assets/projects/portfolio-website.png";
+
+export const fileProcessingSystem = {
+  title: "File Processing System",
+  subtitle: "Scalable CSV Processing Backend",
+  type: "Backend Project",
+  status: "In Development",
+  year: "2026",
+
+  description:
+    "A backend system designed to process large batches of CSV files, compute row-wise aggregates across files, and track processing through persistent batch and job state.",
+
+  github: null,
+
+  tech: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "REST APIs",
+  ],
+
+  flow: [
+    {
+      number: "01",
+      title: "Batch",
+      text: "A processing request groups related input files into a single batch.",
+    },
+    {
+      number: "02",
+      title: "Files",
+      text: "File metadata and file-to-job relationships are persisted for tracking.",
+    },
+    {
+      number: "03",
+      title: "Jobs",
+      text: "Individual processing work is represented and tracked independently.",
+    },
+    {
+      number: "04",
+      title: "Aggregation",
+      text: "Corresponding row values are combined across the input files.",
+    },
+  ],
+
+  engineering: [
+    {
+      number: "01",
+      title: "Batch-oriented design",
+      text: "Separates a collection of input files from the individual work performed on each file.",
+    },
+    {
+      number: "02",
+      title: "Persistent state",
+      text: "MongoDB stores batch, file, job, and processing-state information so progress is not purely in memory.",
+    },
+    {
+      number: "03",
+      title: "Job visibility",
+      text: "Batch-level and file-level state provide a clear model for understanding what is being processed.",
+    },
+    {
+      number: "04",
+      title: "Backend-first architecture",
+      text: "The system is being built around APIs, data models, request handling, and processing workflows rather than a presentation layer.",
+    },
+  ],
+};
 
 export const smartMoney = {
   title: "SmartMoney",
@@ -17,7 +81,7 @@ export const smartMoney = {
   year: "2026",
 
   description:
-    "A full-stack personal finance platform designed to bring expenses, budgets, savings, investments, recurring payments, analytics, and financial reporting into one secure dashboard.",
+    "A full-stack personal finance platform bringing expenses, budgets, savings, investments, recurring payments, analytics, and financial reporting into one secure dashboard.",
 
   overview:
     "SmartMoney evolved from an expense tracker into a modular finance application with authenticated user flows, reusable frontend architecture, REST APIs, financial analytics, security middleware, and exportable reports.",
@@ -71,7 +135,7 @@ export const smartMoney = {
     },
     {
       number: "04",
-      title: "Production-Minded Security",
+      title: "Backend Security",
       text: "Helmet security headers, rate limiting, MongoDB sanitization, CORS configuration, and defensive backend middleware.",
     },
     {
@@ -146,43 +210,6 @@ export const projects = [
     ],
     github: "https://github.com/MayankSharma1000/Gmail-support-deflector",
   },
-  {
-    title: "HireJourney",
-    subtitle: "Job Application CRM",
-    type: "Career Management Platform",
-    image: hireJourney,
-    status: "Completed",
-    year: "2026",
-    description:
-      "A job application management platform for tracking applications, interview stages, follow-ups, deadlines, recruiter interactions, and hiring progress from a centralized dashboard.",
-    tech: [
-      "JavaScript",
-      "Node.js",
-      "Express.js",
-      "REST APIs",
-      "Responsive UI",
-    ],
-    github: "https://github.com/MayankSharma1000/Hire_Journey",
-  },
-  {
-    title: "Portfolio Website",
-    subtitle: "Interactive Developer Portfolio",
-    type: "Frontend Project",
-    image: portfolioWebsite,
-    status: "Live",
-    year: "2026",
-    description:
-      "A React portfolio focused on product presentation, responsive layouts, motion, smooth navigation, and polished interaction design.",
-    tech: [
-      "React.js",
-      "Vite",
-      "Framer Motion",
-      "CSS",
-      "Responsive Design",
-    ],
-    github: "https://github.com/MayankSharma1000/portfolio-website",
-    live: "https://portfolio-website-2jyd.vercel.app",
-  },
 ];
 
 export const skillGroups = [
@@ -199,8 +226,6 @@ export const skillGroups = [
       "Component Architecture",
       "Reusable Components",
       "React Hooks",
-      "State Management",
-      "UI/UX Implementation",
     ],
   },
   {
@@ -215,35 +240,20 @@ export const skillGroups = [
       "Server-Side Logic",
       "API Integration",
       "Async JavaScript",
-      "Promises",
-      "Event Loop",
     ],
   },
   {
-    title: "Database & Data",
+    title: "Database & Security",
     skills: [
       "MongoDB",
+      "Mongoose",
       "Data Modeling",
-      "Database Integration",
-      "Application Data Flows",
-      "Financial Analytics",
-      "Derived Calculations",
-      "PDF Reporting",
-      "Excel Reporting",
-    ],
-  },
-  {
-    title: "Authentication & Security",
-    skills: [
       "JWT Authentication",
       "Protected Routes",
-      "bcrypt.js",
-      "Password Hashing",
+      "bcrypt",
       "Helmet",
       "Rate Limiting",
-      "Mongo Sanitization",
       "CORS",
-      "Security Middleware",
       "Access Control",
     ],
   },
@@ -254,7 +264,6 @@ export const skillGroups = [
       "REST Architecture",
       "Modular Components",
       "Reusable Hooks",
-      "Shared Utilities",
       "Separation of Concerns",
       "Feature-Oriented Design",
       "Debugging",
@@ -263,7 +272,7 @@ export const skillGroups = [
     ],
   },
   {
-    title: "AI & Machine Learning",
+    title: "AI & Developer Tools",
     skills: [
       "LLM Integration",
       "OpenRouter API",
@@ -271,62 +280,26 @@ export const skillGroups = [
       "AI Workflows",
       "Sentiment Analysis",
       "Text Categorization",
-      "AI Draft Generation",
-      "NLP",
-      "Python",
-    ],
-  },
-  {
-    title: "Developer Tools & Delivery",
-    skills: [
       "Git",
       "GitHub",
       "Postman",
       "NPM",
       "VS Code",
       "Chrome DevTools",
-      "Vercel",
       "Docker",
-      "Build Debugging",
-      "Production Builds",
-      "Deployment Workflows",
+      "Docker Compose",
+      "Vercel",
     ],
   },
   {
-    title: "Programming & Foundations",
+    title: "Programming Foundations",
     skills: [
-      "JavaScript",
-      "Python",
       "C++",
-      "OOP",
-      "DSA",
+      "Python",
+      "Object-Oriented Programming",
+      "Data Structures & Algorithms",
       "Asynchronous Programming",
       "Problem Solving",
-      "Software Debugging",
-      "Responsive Web Development",
     ],
-  },
-];
-
-export const certifications = [
-  {
-    title: "MLOps Tools: MLflow and Hugging Face",
-    issuer: "Coursera",
-    link: "https://coursera.org/share/97816713f79e3771dbcb27929b1dccf8",
-  },
-  {
-    title: "Natural Language Processing with Sequence Models",
-    issuer: "Coursera",
-    link: "https://coursera.org/share/b4323a22bccb3c039c82a1f29cbadc41",
-  },
-  {
-    title: "Natural Language Processing with Attention Models",
-    issuer: "Coursera",
-    link: "https://coursera.org/share/796d47aa02eabdb24dee2822f82bd44a",
-  },
-  {
-    title: "Natural Language Processing with Probabilistic Models",
-    issuer: "Coursera",
-    link: "https://coursera.org/share/062921565ef53b0895982637b9776160",
   },
 ];

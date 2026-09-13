@@ -42,7 +42,7 @@ function SmartMoneyShowcase() {
         >
           <div className="smartmoney-heading">
             <div className="smartmoney-kicker">
-              <span>01</span>
+              <span>02</span>
               <span>{smartMoney.type}</span>
               <span>{smartMoney.year}</span>
             </div>

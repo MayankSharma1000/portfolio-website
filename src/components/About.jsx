@@ -6,31 +6,52 @@ function About() {
         <h2>Engineer first. Stack second.</h2>
       </div>
 
-      <p>
-        I'm a Computer Science Engineering graduate with an Honors
-        specialization in Artificial Intelligence and Machine Learning.
-        My work spans frontend development, backend systems, full-stack
-        applications, REST APIs, databases, authentication, application
-        security, AI integrations, UI/UX, debugging, and product engineering.
-        <br /><br />
-        I have built applications using React, JavaScript, Node.js,
-        Express.js, MongoDB, JWT authentication, protected routes, bcrypt
-        password hashing, CRUD workflows, reusable hooks, modular components,
-        API-driven architecture, analytics, reporting, and LLM-powered
-        workflows.
-        <br /><br />
-        I don't want to limit myself to a single layer of software
-        development. I'm comfortable contributing to frontend, backend,
-        full-stack, AI-enabled products, web platforms, APIs, internal tools,
-        or adjacent software engineering work where I can apply my technical
-        foundation, learn the system quickly, and solve useful problems.
-      </p>
+      <div className="about-copy">
+        <p>
+          I'm a Computer Science Engineering graduate with a specialization
+          in Artificial Intelligence and Machine Learning. My strongest
+          interests are full-stack development, backend engineering, APIs,
+          databases, and practical AI integrations.
+        </p>
 
-      <div className="stats-row">
-        <div><strong>4</strong><span>Product Projects</span></div>
-        <div><strong>5+</strong><span>Engineering Areas</span></div>
-        <div><strong>25+</strong><span>Technologies & Tools</span></div>
-        <div><strong>AI/ML</strong><span>CSE Honors</span></div>
+        <p>
+          I've built applications with React, Node.js, Express.js, MongoDB,
+          JWT authentication, Docker, REST APIs, and LLM APIs. I like
+          understanding how the pieces connect rather than treating the
+          frontend and backend as separate worlds.
+        </p>
+
+        <p>
+          Right now, I'm deepening that approach through a file-processing
+          backend that deals with batches, files, jobs, persistent state,
+          and row-wise CSV aggregation.
+        </p>
+      </div>
+
+      <div className="about-principles">
+        <div>
+          <span>01</span>
+          <strong>Build</strong>
+          <p>Turn a requirement into something working.</p>
+        </div>
+
+        <div>
+          <span>02</span>
+          <strong>Understand</strong>
+          <p>Learn the system instead of hiding behind abstractions.</p>
+        </div>
+
+        <div>
+          <span>03</span>
+          <strong>Debug</strong>
+          <p>Trace problems until the actual cause makes sense.</p>
+        </div>
+
+        <div>
+          <span>04</span>
+          <strong>Improve</strong>
+          <p>Refactor and strengthen what I build as I learn.</p>
+        </div>
       </div>
     </section>
   );
