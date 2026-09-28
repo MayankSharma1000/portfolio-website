@@ -39,7 +39,7 @@ function Hero() {
           </a>
 
           <a
-            href="/resume/Mayank_Sharma_Resume.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="btn secondary"
